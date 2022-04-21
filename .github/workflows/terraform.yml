@@ -30,11 +30,11 @@ jobs:
       
       - name: Terraform Validate
         id: validate
-        run: terraform validate -no-color
+        run: terraform validate
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color -input=false
+        run: terraform plan -input=false
         continue-on-error: true
 
       - uses: actions/github-script@v6
@@ -73,7 +73,3 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve -input=false
-      
-      - name: Terraform Destroy
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform destroy
