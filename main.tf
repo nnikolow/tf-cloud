@@ -15,7 +15,7 @@ terraform {
     organization = "nn-org1"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "tf-cloud"
     }
   }
 }
