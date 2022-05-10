@@ -1,4 +1,7 @@
-# Automate Terraform with GitHub Actions
+# Learn Terraform outputs
 
+Learn how Terraform output values allow you to export structured data about your resources.
 
-This repo is a companion repo to the [Automate Terraform with GitHub Actions](https://learn.hashicorp.com/tutorials/terraform/github-actions?in=terraform/automation).
+Follow along [with this
+tutorial](https://learn.hashicorp.com/tutorials/terraform/outputs?in=terraform/configuration-language) on HashiCorp
+Learn.
