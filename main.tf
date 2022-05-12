@@ -82,9 +82,9 @@ module "elb_http" {
 
   health_check = {
     target              = "HTTP:80/index.html"
-    interval            = 10
-    healthy_threshold   = 3
-    unhealthy_threshold = 10
+    interval            = 30
+    healthy_threshold   = 2
+    unhealthy_threshold = 2
     timeout             = 5
   }
 }
