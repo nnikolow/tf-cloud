@@ -103,7 +103,6 @@ resource "aws_db_subnet_group" "private" {
 }
 
 resource "aws_db_instance" "database" {
-  #test
   allocated_storage = 5
   engine            = "mysql"
   instance_class    = "db.t2.micro"
