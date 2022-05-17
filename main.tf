@@ -5,10 +5,19 @@ terraform {
       version = "3.16.0"
     }
   }
+  required_version = ">= 1.1.0"
+
+  cloud {
+    organization = "nn-org1"
+
+    workspaces {
+      name = "tf-cloud-gh"
+    }
+  }
 }
 
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-1"
 }
 
 data "aws_availability_zones" "available" {
