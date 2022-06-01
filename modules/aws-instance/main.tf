@@ -23,6 +23,6 @@ resource "aws_instance" "app" {
     sudo yum install httpd -y
     sudo systemctl enable httpd
     sudo systemctl start httpd
-    echo "<html><body><div>Hello, world!</div></body></html>" > /var/www/html/index.html
+    echo "<html><body><div>Hello, world! It's Nikolay's Load Balancer!</div></body></html>" > /var/www/html/index.html
     EOF
 }
